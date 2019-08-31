@@ -2,4 +2,78 @@
 .inbox {
     @extend %section1;
     background:#FCF0E3;
+    display:flex;
+    flex-wrap: wrap;
+    position: relative;
+    @include mobile-tablet() {
+        flex-direction: column;
+    }
+    div:first-child {
+        flex:1;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        img {
+            @include mobile-tablet() {
+                max-width: 290px;
+                width:100%;
+                height: auto;
+            }
+        }
+    }
+    &__content {
+        max-width: 510px;
+        @include mobile-tablet() {
+            max-width:100%;
+        }
+        float:right;
+        @include mobile-tablet() {
+            margin-top:32px;
+        }
+        .title {
+            color:#F1592B;
+            font-weight: bold;
+        }
+        .b-title {
+            margin-top:24px;
+            font-size: 5.6rem;
+            @include mobile-tablet() {
+                margin-top:17px;
+                font-size:4rem;
+            }
+        }
+        .desc {
+            margin-top:30px;
+            font-size: 2.4rem;
+            @include mobile-tablet() {
+                margin-top:18px;
+            }
+        }
+        .feedback {
+            background:$infoColor;
+            padding:30px;
+            margin-top:44px;
+            &__message {
+                font-size:2rem;
+            }
+            border-bottom: 4px solid #0185D0;
+        }
+        .feedback__info {
+            display:flex;
+            margin-top:26px;
+            align-items: center;
+            img {
+                width:40px;
+                height:40px;
+            }
+            div {
+                margin-left:1rem;
+                font-size:1.6rem;
+                .career {
+                    color:#2B292D;
+                    margin-top:5px;
+                }
+            }
+        }
+    }
 }
