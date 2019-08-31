@@ -4,6 +4,11 @@
 @import './styles/commons/responsive.scss';
 @import './styles/commons/variables.scss';
 @import './styles/header.scss';
+@import './styles/about-it.scss';
+@import './styles/header.scss';
+@import './styles/features.scss';
+@import './styles/communication.scss';
+@import './styles/inbox.scss';
 body {
     font-size: 2.2rem;
     font-family: 'Work Sans', sans-serif;
@@ -40,31 +45,4 @@ a, a:active, a:focus {
         padding-left:15px;
         padding-right:15px;
     }
-}
-.about_it  {
-    background:#F4F5F7;
-    padding-top:77px;
-    padding-bottom:77px;
-    display: flex;
-    font-size: 22px;
-}
-.about_it div {
-    margin-left:22px;
-}
-.about_it div:first-child {
-    margin-left:0;
-}
-.about_it p  {
-    line-height: 1.5;
-    margin-top:25px;
-}
-.features__logos img {
-     width:100%;
-     height: auto;
-}
-.features__logos {
-    margin-top:30px;
-}
-.features__main {
-    max-width: 460px;
 }

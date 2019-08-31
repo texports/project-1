@@ -1,0 +1,100 @@
+
+
+.features__logos {
+   margin-top:30px;
+}
+.features__main {
+   max-width: 460px;
+   margin-top:107px;
+   margin-bottom: 110px;
+   @include mobile-tablet() {
+       margin-top:48px;
+       margin-bottom: 0px;
+   }
+   > .name {
+        color:#009B4D;
+        font-weight: bold;
+   }
+   > .title {
+       font-size: 5.6rem;
+       @include mobile-tablet() {
+           font-size:4rem;
+       }
+       margin-top:24px;
+   }
+   > .desc {
+       margin-top:30px;
+       @include mobile-tablet() {
+           font-size:24px;
+       }
+   }
+   .acquire {
+       @include mobile-tablet() {
+           display:none;
+       }
+       margin-top:42px;
+         .title {
+             i {
+                 margin-right:15px;
+             }
+            color:$primaryColor;
+            font-weight: bold;
+        }
+        .description {
+            margin-top:8px;
+            font-size: 1.8rem;
+        }
+        hr {
+            margin-top:8px;
+            height: 3px;
+            background: $primaryColor;
+        }
+        ul {
+            display: flex;
+            flex-direction: column;
+            li {
+                font-weight: bold;
+                padding: 22px 0;
+                position: relative;
+                &:after {
+                    content: "";
+                    display:block;
+                    height:1px;
+                    background:$textColor;
+                    width:100%;
+                    left:0;
+                    opacity: .15;
+                    position: absolute;
+                    bottom:0;
+                }
+            }
+        }
+   }
+}
+.features   {
+    
+    position: relative;
+    @include mobile-tablet() {
+        &__eyes {
+            display:none;
+        }
+        &__invision {
+            position: relative !important;
+            top:30px !important;
+            width:100%;
+            height:auto;
+            left:0;
+        }
+    }
+    &__eyes, &__invision {
+        position: absolute;
+    }
+    &__eyes {
+        top:469px;
+        left:0;
+    }
+    &__invision {
+        top:198px;
+        right:0;
+    }
+}
